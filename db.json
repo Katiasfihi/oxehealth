@@ -1,0 +1,16 @@
+{
+  "rovers": [
+    {
+      "name": "rover 1",
+      "status": "Ready to launch"
+    },
+    {
+      "name": "rover 2",
+      "status": "Work in progress"
+    },
+    {
+      "name": "rover 2",
+      "status": "Work in progress"
+    }
+  ]
+}

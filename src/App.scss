@@ -1,0 +1,83 @@
+.dashboard {
+  border : 2px solid black;
+  text-align: center;
+  width: 50%;
+  margin: 0 auto;
+  padding: 10rem;
+  border: 2px solid purple;
+  width: fit-content;
+
+    &__content {
+      display: flex;
+      justify-content: space-evenly;
+      border: 2px solid blue;
+
+      &--element {
+        border: 2px solid green;
+        padding: 4rem;
+      }
+    }
+
+    &__header {
+    border: 2px solid pink;
+    padding: 5rem;
+    margin-top: -7rem;
+    font-size: 2rem;
+
+    }
+
+    &__footer {
+      padding: 1.5rem;
+
+       
+      &--button {  
+        float: right;
+        border: 2px solid red;
+        padding: 1rem;
+        margin-top: 5rem;
+        cursor: pointer;
+      }
+
+    }
+}
+
+.object {
+  border: 2px solid red;
+}
+
+.object2 {
+  border: 2px solid yellow;
+}
+
+.h1 {
+  border : 2px solid blue;
+  margin: 0 auto;
+  margin-top: -1rem;
+}
+
+.input-rover-name {
+  background-color: lightgrey;
+  border-radius: 5px;
+  padding: 0.4rem 1.5rem;
+}
+
+.popup-button {
+  margin-top: 2rem;
+  border : 2px solid red;
+  display: flex;
+  justify-content: center;
+
+   &__one {
+     border: 2px solid green;
+     margin: 0 2rem;
+     padding: 0.3rem .8rem;
+   }
+}
+
+@media only screen and (max-width: 768px) {
+  .dashboard {
+    &__content {
+      flex-direction: column;
+    }
+  }
+}
