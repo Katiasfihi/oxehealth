@@ -66,12 +66,17 @@
   border : 2px solid red;
   display: flex;
   justify-content: center;
-
+ 
    &__one {
      border: 2px solid green;
      margin: 0 2rem;
      padding: 0.3rem .8rem;
+     cursor: pointer;
    }
+
+   &__two {
+    cursor: pointer;
+  }
 }
 
 @media only screen and (max-width: 768px) {
