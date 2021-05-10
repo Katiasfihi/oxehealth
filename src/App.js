@@ -6,7 +6,6 @@ function App() {
 
   const [data, setData ] = useState([])
   const [isOpen, setIsOpen] = useState(false);
-  const url = ''
   const [postId, setPostId] = useState(null)
   const [input, setInput] = useState({name: ''})
  
@@ -21,7 +20,48 @@ function App() {
  } 
 
 
-  function sendMyData () {
+
+
+
+/*
+ // Example POST method implementation:
+async function postData(url = '', data = {}) {
+  console.log('postData')
+  // Default options are marked with *
+  const response = await fetch(url, {
+    method: 'POST', // *GET, POST, PUT, DELETE, etc.
+    mode: 'cors', // no-cors, *cors, same-origin
+    cache: 'no-cache', // *default, no-cache, reload, force-cache, only-if-cached
+    credentials: 'same-origin', // include, *same-origin, omit
+    headers: {
+      'Content-Type': 'application/json'
+      // 'Content-Type': 'application/x-www-form-urlencoded',
+    },
+    redirect: 'follow', // manual, *follow, error
+    referrerPolicy: 'no-referrer', // no-referrer, *no-referrer-when-downgrade, origin, origin-when-cross-origin, same-origin, strict-origin, strict-origin-when-cross-origin, unsafe-url
+    body: JSON.stringify(data) // body data type must match "Content-Type" header
+  }).then(r => console.log(r.json()))///.then(d => console.log(d))
+
+  return response.json(); // parses JSON response into native JavaScript objects
+}
+*/
+
+
+
+
+
+/*
+postData('http://localhost:3000/rovers', { answer: 42 })
+  .then(data => {
+    console.log(data); // JSON data parsed by `data.json()` call
+  });
+*/
+
+
+
+
+/*
+  function postData () {
     const requestOptions = {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
@@ -29,18 +69,20 @@ function App() {
   };
   fetch('http://localhost:3000/rovers', requestOptions)
   .then (response => response.json())
-  .then (data=> setPostId(data.name));
+  .then (data => setPostId(data.name));
   }
- 
+ */
   useEffect(() => {
     getMyData()
-    sendMyData()
   }, []);
+
 
 function submit(e){
   e.preventDefault();
-  sendMyData()
+  //postData('http://localhost:3000/rovers', { answer: 42 })
 }
+
+
 
 function handle(e){
   const newInput = {...input}
@@ -48,12 +90,13 @@ function handle(e){
   setInput(newInput)
   console.log(newInput)
 }
-  
+
 
   return (
+    <div className='window'>
+        <video src='/video2.mp4' type="video/mp4" autoPlay loop muted />
     <div className="dashboard">
-      <header className='dashboard__header'>Mars Rovers</header>
-      <div>hello{postId}</div>
+      <header className='dashboard__header'>Mars Rovers</header>     
           <div className='dashboard__content'>
           {
               data.map((el)=>
@@ -86,6 +129,7 @@ function handle(e){
               handleClose={togglePopup}
             />}
           </footer>         
+    </div>
     </div>
   );
 }

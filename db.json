@@ -1,16 +1,52 @@
 {
   "rovers": [
     {
-      "name": "rover 1",
+      "name": "Space",
       "status": "Ready to launch"
     },
     {
-      "name": "rover 2",
+      "name": "Galaxy",
       "status": "Work in progress"
     },
     {
-      "name": "rover 2",
+      "name": "Universe",
       "status": "Work in progress"
+    },
+    {
+      "name": "Astronaut",
+      "status": "Ready to launch"
+    },
+    {
+      "name": "Asteroid",
+      "status": "Work in progress"
+    },
+    {
+      "name": "Star",
+      "status": "Work in progress"
+    },
+    {
+      "name": "Constellation",
+      "status": "Ready to launch"
+    },
+    {
+      "name": "Comet",
+      "status": "Work in progress"
+    },
+    {
+      "name": "Black Hole",
+      "status": "Work in progress"
+    },
+    {
+      "name": "Earth",
+      "status": "Ready to launch"
+    },
+    {
+      "name": "Solar System",
+      "status": "Work in progress"
+    },
+    {
+      "name": "Orbit",
+      "status": "Ready to launch"
     }
   ]
 }

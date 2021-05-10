@@ -1,29 +1,59 @@
+.window {
+  video {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    z-index: -1;
+    filter: black;
+  }
+}
+
 .dashboard {
-  border : 2px solid black;
   text-align: center;
   width: 50%;
   margin: 0 auto;
-  padding: 10rem;
-  border: 2px solid purple;
+  padding: 5rem;
   width: fit-content;
+  background-color: rgba(34, 36, 59, 0.7);
+  border-radius: 5px;
 
     &__content {
       display: flex;
       justify-content: space-evenly;
-      border: 2px solid blue;
+      flex-wrap: wrap;
+      margin-top: 1rem;
 
       &--element {
-        border: 2px solid green;
         padding: 4rem;
+        display: flex;
+        flex-direction: column;
+        background-color: rgba(61, 64, 94, 0.2);
+        color: rgb(240, 6, 123);
+        border-radius: 15px;
+        width: 13%;
+        align-items: center;
+        justify-content: space-between;
       }
+
+      &--element:hover {
+        transform: scale(1.01);
+       }
     }
 
     &__header {
-    border: 2px solid pink;
+    border: 2px solid rgb(202, 148, 157);
     padding: 5rem;
-    margin-top: -7rem;
-    font-size: 2rem;
-
+    margin-top: -2rem;
+    font-size: 5rem;
+    font-family: 'Audiowide', cursive;
+    background-image: linear-gradient(140deg,#ff61dd, #c5048b, #530140, #41013a);
+    background-size: 100%;
+    background-repeat: repeat;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent; 
+    -moz-background-clip: text;
+    -moz-text-fill-color: transparent;
     }
 
     &__footer {
@@ -32,57 +62,78 @@
        
       &--button {  
         float: right;
-        border: 2px solid red;
-        padding: 1rem;
-        margin-top: 5rem;
+        padding: .5rem;
+        margin-top: 2rem;
         cursor: pointer;
+        font-size: 1rem;
+        font-family: 'Audiowide', cursive;
+        border-radius: 10px;
+        background-color: #313445;   
+        color: #2e0023; 
+        border: none;  
       }
 
     }
 }
 
 .object {
-  border: 2px solid red;
+  font-family: 'Average', serif;
+  font-size: 2rem;
 }
 
 .object2 {
-  border: 2px solid yellow;
+  font-family: 'Average', serif;
+  font-size: 1rem;
+  font-style: italic; 
+  color: rgb(158, 80, 119);
 }
 
 .h1 {
-  border : 2px solid blue;
   margin: 0 auto;
   margin-top: -1rem;
+  font-size: 2rem;
+  font-family: 'Audiowide', cursive;
+}
+
+.h2 {
+  font-family: 'Average', serif;
+  font-size: 1.5rem;
 }
 
 .input-rover-name {
   background-color: lightgrey;
   border-radius: 5px;
   padding: 0.4rem 1.5rem;
+  border: none;
+}
+
+::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+  color: rgb(153, 151, 151);
+  font-family: 'Audiowide', cursive;
 }
 
 .popup-button {
-  margin-top: 2rem;
-  border : 2px solid red;
+  margin-top: 3rem;
   display: flex;
   justify-content: center;
+  
+ 
  
    &__one {
-     border: 2px solid green;
+     border: 2px solid rgb(8, 8, 51);
      margin: 0 2rem;
-     padding: 0.3rem .8rem;
+     padding: 0.3rem .9rem;
      cursor: pointer;
+     font-family: 'Audiowide', cursive;
+     border-radius: 15px;
    }
-
-   &__two {
-    cursor: pointer;
-  }
 }
 
 @media only screen and (max-width: 768px) {
   .dashboard {
     &__content {
       flex-direction: column;
+      align-items: center;
     }
   }
 }
