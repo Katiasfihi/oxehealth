@@ -42,7 +42,7 @@
     }
 
     &__header {
-    border: 2px solid rgb(202, 148, 157);
+    border: 1px solid  #c79bbd; ;
     padding: 5rem;
     margin-top: -2rem;
     font-size: 5rem;
@@ -74,59 +74,6 @@
       }
 
     }
-}
-
-.object {
-  font-family: 'Average', serif;
-  font-size: 2rem;
-}
-
-.object2 {
-  font-family: 'Average', serif;
-  font-size: 1rem;
-  font-style: italic; 
-  color: rgb(158, 80, 119);
-}
-
-.h1 {
-  margin: 0 auto;
-  margin-top: -1rem;
-  font-size: 2rem;
-  font-family: 'Audiowide', cursive;
-}
-
-.h2 {
-  font-family: 'Average', serif;
-  font-size: 1.5rem;
-}
-
-.input-rover-name {
-  background-color: lightgrey;
-  border-radius: 5px;
-  padding: 0.4rem 1.5rem;
-  border: none;
-}
-
-::-webkit-input-placeholder { /* Chrome/Opera/Safari */
-  color: rgb(153, 151, 151);
-  font-family: 'Audiowide', cursive;
-}
-
-.popup-button {
-  margin-top: 3rem;
-  display: flex;
-  justify-content: center;
-  
- 
- 
-   &__one {
-     border: 2px solid rgb(8, 8, 51);
-     margin: 0 2rem;
-     padding: 0.3rem .9rem;
-     cursor: pointer;
-     font-family: 'Audiowide', cursive;
-     border-radius: 15px;
-   }
 }
 
 @media only screen and (max-width: 768px) {
