@@ -4,6 +4,12 @@ npm install -g json-server
 
 json-server --watch db.json
 
+The result should be the following :
+Resources
+http://localhost:3000/rovers
+Home
+http://localhost:3000
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
